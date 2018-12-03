@@ -15,4 +15,6 @@ if __name__ == '__main__':
     inception_paths.append(inception_path + 'output_graph.pb')
     inception_paths.append(inception_path + 'output_labels.txt')
 
-    yoio = YOIO(libdarknet_paths, inception_paths)
+    yoio = YOIO(libdarknet_paths, inception_paths,
+                proj_path + 'inception/train_photos/raw/Paulo/')
+    # yoio.process_img(proj_path + 'inception/demo_photos/Paulo/dom2.jpg')
